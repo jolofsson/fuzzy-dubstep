@@ -1,0 +1,200 @@
+\hypertarget{class_treasure}{
+\section{Treasure Class Reference}
+\label{class_treasure}\index{Treasure@{Treasure}}
+}
+
+
+Har hand om objekten i spelet.  
+
+
+
+
+{\ttfamily \#include $<$Treasure.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_treasure_a96cbdd827ac65b0cf9a960bf398afb3d}{
+int {\bfseries getX\_\-pos} ()}
+\label{class_treasure_a96cbdd827ac65b0cf9a960bf398afb3d}
+
+\item 
+\hypertarget{class_treasure_aa636b77baa1f792a7b73780d767f30cc}{
+int {\bfseries getY\_\-pos} ()}
+\label{class_treasure_aa636b77baa1f792a7b73780d767f30cc}
+
+\item 
+void \hyperlink{class_treasure_a44b7a669a64da396e70a2814ba685849}{randomiseNewPosition} ()
+\begin{DoxyCompactList}\small\item\em Slumpar fram ny position f\"{o}r diamanten. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_treasure_a2382ccf000ba919a739087ffc67cc350}{draw} (BITMAP $\ast$buffer, BITMAP $\ast$diamond)
+\begin{DoxyCompactList}\small\item\em Skriver ut grafiken f\"{o}r diamanterna. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_treasure_a1b617a9a44bfab3a2a506168b328f4fb}{pickedUp} (\hyperlink{class_character}{Character} c1)
+\begin{DoxyCompactList}\small\item\em Funktion som kontrollerar om spelaren befinner sig p\aa en diamant. \item\end{DoxyCompactList}\item 
+\hypertarget{class_treasure_abf117fc243eb670bd24f8abd4ce027db}{
+int {\bfseries getTotal\_\-treasure} ()}
+\label{class_treasure_abf117fc243eb670bd24f8abd4ce027db}
+
+\item 
+void \hyperlink{class_treasure_a4adfbdd7f6836055e45799109900b967}{updateTotal\_\-treasure} ()
+\begin{DoxyCompactList}\small\item\em Uppdaterar antalet diamanter i spelet (max 7). \item\end{DoxyCompactList}\item 
+\hypertarget{class_treasure_a3bab1a60b9be4238a7e8e87ebea518bf}{
+void {\bfseries setTotal\_\-treasure} (int amount)}
+\label{class_treasure_a3bab1a60b9be4238a7e8e87ebea518bf}
+
+\item 
+\hypertarget{class_treasure_a753f724453fda354c6096c89e45c4eec}{
+bool {\bfseries getPickedUp} ()}
+\label{class_treasure_a753f724453fda354c6096c89e45c4eec}
+
+\item 
+void \hyperlink{class_treasure_af736621c70a28836a8d2d5e99f6aeeeb}{remove\_\-treasure} ()
+\begin{DoxyCompactList}\small\item\em Tar bort diamant fr\aan spelplan. \item\end{DoxyCompactList}\item 
+\hypertarget{class_treasure_abf55a294daa994e8da74cde368a3c862}{
+void {\bfseries restart} ()}
+\label{class_treasure_abf55a294daa994e8da74cde368a3c862}
+
+\item 
+void \hyperlink{class_treasure_a9404782e0c574fbb12b4fdac0727ff42}{updatePicked\_\-treasure} ()
+\begin{DoxyCompactList}\small\item\em Uppdaterar antalet upplockade diamanter. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_treasure_a13a597f8b516e5234d190a3a3e5c379c}{resetPicked\_\-treasure} ()
+\begin{DoxyCompactList}\small\item\em Nollst\"{a}ller r\"{a}knaren f\"{o}r upplockade diamanter. \item\end{DoxyCompactList}\item 
+\hypertarget{class_treasure_aa5bf79236d342031dc20145bb189343e}{
+int {\bfseries getPicked\_\-treasure} ()}
+\label{class_treasure_aa5bf79236d342031dc20145bb189343e}
+
+\item 
+\hyperlink{class_treasure_abd7b4ecec1e73e944892862e9c233dd6}{Treasure} (void)
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Har hand om objekten i spelet. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_treasure_abd7b4ecec1e73e944892862e9c233dd6}{
+\index{Treasure@{Treasure}!Treasure@{Treasure}}
+\index{Treasure@{Treasure}!Treasure@{Treasure}}
+\subsubsection[{Treasure}]{\setlength{\rightskip}{0pt plus 5cm}Treasure::Treasure (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{class_treasure_abd7b4ecec1e73e944892862e9c233dd6}
+
+
+Default constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_treasure_a2382ccf000ba919a739087ffc67cc350}{
+\index{Treasure@{Treasure}!draw@{draw}}
+\index{draw@{draw}!Treasure@{Treasure}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Treasure::draw (
+\begin{DoxyParamCaption}
+\item[{BITMAP $\ast$}]{buffer, }
+\item[{BITMAP $\ast$}]{diamond}
+\end{DoxyParamCaption}
+)}}
+\label{class_treasure_a2382ccf000ba919a739087ffc67cc350}
+
+
+Skriver ut grafiken f\"{o}r diamanterna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em diamond} & F\"{o}r att f\aa tillg\aang till att rita ut bilden p\aa sk\"{a}rmen. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_treasure_a1b617a9a44bfab3a2a506168b328f4fb}{
+\index{Treasure@{Treasure}!pickedUp@{pickedUp}}
+\index{pickedUp@{pickedUp}!Treasure@{Treasure}}
+\subsubsection[{pickedUp}]{\setlength{\rightskip}{0pt plus 5cm}bool Treasure::pickedUp (
+\begin{DoxyParamCaption}
+\item[{{\bf Character}}]{c1}
+\end{DoxyParamCaption}
+)}}
+\label{class_treasure_a1b617a9a44bfab3a2a506168b328f4fb}
+
+
+Funktion som kontrollerar om spelaren befinner sig p\aa en diamant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & Anv\"{a}nds f\"{o}r att kontrollera spelarens position mot diamantens. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sant om spelaren befinner sig p\aa samma position som en diamanten annars falskt.
+\end{DoxyReturn}
+\hypertarget{class_treasure_a44b7a669a64da396e70a2814ba685849}{
+\index{Treasure@{Treasure}!randomiseNewPosition@{randomiseNewPosition}}
+\index{randomiseNewPosition@{randomiseNewPosition}!Treasure@{Treasure}}
+\subsubsection[{randomiseNewPosition}]{\setlength{\rightskip}{0pt plus 5cm}void Treasure::randomiseNewPosition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_treasure_a44b7a669a64da396e70a2814ba685849}
+
+
+Slumpar fram ny position f\"{o}r diamanten. 
+
+\hypertarget{class_treasure_af736621c70a28836a8d2d5e99f6aeeeb}{
+\index{Treasure@{Treasure}!remove\_\-treasure@{remove\_\-treasure}}
+\index{remove\_\-treasure@{remove\_\-treasure}!Treasure@{Treasure}}
+\subsubsection[{remove\_\-treasure}]{\setlength{\rightskip}{0pt plus 5cm}void Treasure::remove\_\-treasure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_treasure_af736621c70a28836a8d2d5e99f6aeeeb}
+
+
+Tar bort diamant fr\aan spelplan. 
+
+\hypertarget{class_treasure_a13a597f8b516e5234d190a3a3e5c379c}{
+\index{Treasure@{Treasure}!resetPicked\_\-treasure@{resetPicked\_\-treasure}}
+\index{resetPicked\_\-treasure@{resetPicked\_\-treasure}!Treasure@{Treasure}}
+\subsubsection[{resetPicked\_\-treasure}]{\setlength{\rightskip}{0pt plus 5cm}void Treasure::resetPicked\_\-treasure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_treasure_a13a597f8b516e5234d190a3a3e5c379c}
+
+
+Nollst\"{a}ller r\"{a}knaren f\"{o}r upplockade diamanter. 
+
+\hypertarget{class_treasure_a9404782e0c574fbb12b4fdac0727ff42}{
+\index{Treasure@{Treasure}!updatePicked\_\-treasure@{updatePicked\_\-treasure}}
+\index{updatePicked\_\-treasure@{updatePicked\_\-treasure}!Treasure@{Treasure}}
+\subsubsection[{updatePicked\_\-treasure}]{\setlength{\rightskip}{0pt plus 5cm}void Treasure::updatePicked\_\-treasure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_treasure_a9404782e0c574fbb12b4fdac0727ff42}
+
+
+Uppdaterar antalet upplockade diamanter. 
+
+\hypertarget{class_treasure_a4adfbdd7f6836055e45799109900b967}{
+\index{Treasure@{Treasure}!updateTotal\_\-treasure@{updateTotal\_\-treasure}}
+\index{updateTotal\_\-treasure@{updateTotal\_\-treasure}!Treasure@{Treasure}}
+\subsubsection[{updateTotal\_\-treasure}]{\setlength{\rightskip}{0pt plus 5cm}void Treasure::updateTotal\_\-treasure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_treasure_a4adfbdd7f6836055e45799109900b967}
+
+
+Uppdaterar antalet diamanter i spelet (max 7). 
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Treasure.h\item 
+Treasure.cpp\end{DoxyCompactItemize}

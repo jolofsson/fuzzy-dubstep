@@ -1,0 +1,207 @@
+\hypertarget{class_character}{
+\section{Character Class Reference}
+\label{class_character}\index{Character@{Character}}
+}
+
+
+Spelkaraktären.  
+
+
+
+
+{\ttfamily \#include $<$Character.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_character_a2e2631004570a56b1208939d3c25dda0}{
+int {\bfseries getX\_\-pos} ()}
+\label{class_character_a2e2631004570a56b1208939d3c25dda0}
+
+\item 
+\hypertarget{class_character_af0368b021abfcbd3de1760c6f06899a9}{
+int {\bfseries getY\_\-pos} ()}
+\label{class_character_af0368b021abfcbd3de1760c6f06899a9}
+
+\item 
+void \hyperlink{class_character_a77c6faec75c1e6dbde8873077a06d3a5}{move} (int way)
+\begin{DoxyCompactList}\small\item\em Flyttar spelkarakt\"{a}ren \"{o}ver spelplan. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_character_a2f240f8652b6fd299a442b12aac58751}{draw} (BITMAP $\ast$buffer, BITMAP $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Ritar ut spelkarakt\"{a}ren p\aa sk\"{a}rmen. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_character_ad91365a2f616aeab26a0083b32522b28}{updateScore} ()
+\begin{DoxyCompactList}\small\item\em Uppdaterar po\"{a}ngen f\"{o}r spelaren. \item\end{DoxyCompactList}\item 
+\hypertarget{class_character_a8cc9459aa3dddae70061cb18d051a557}{
+int {\bfseries getScore} ()}
+\label{class_character_a8cc9459aa3dddae70061cb18d051a557}
+
+\item 
+void \hyperlink{class_character_a4ef80f3adc05aaa034087ffcdf350e58}{resetScore} ()
+\begin{DoxyCompactList}\small\item\em Nollst\"{a}ller po\"{a}ngen (vid omstart av spel). \item\end{DoxyCompactList}\item 
+void \hyperlink{class_character_a655190d6646f7b99ba7559874874ce1a}{increaseSpeed} ()
+\begin{DoxyCompactList}\small\item\em \"{O}kar hastigheten p\aa hur fort karakt\"{a}ren r\"{o}r sig. \item\end{DoxyCompactList}\item 
+\hypertarget{class_character_af0738ec40a691860e0e82fa52a0fbae5}{
+int {\bfseries getSpeed} ()}
+\label{class_character_af0738ec40a691860e0e82fa52a0fbae5}
+
+\item 
+void \hyperlink{class_character_aa3df58ef04bf2fb027750491b1628bbd}{setSpeed} (int \_\-speed)
+\begin{DoxyCompactList}\small\item\em S\"{a}tter en specifik hastighet f\"{o}r karakt\"{a}ren (anv\"{a}nds vid omstart av spel). \item\end{DoxyCompactList}\item 
+\hypertarget{class_character_a565e3893a34213ab6accd9ed0846f571}{
+void {\bfseries updateLostPoints} ()}
+\label{class_character_a565e3893a34213ab6accd9ed0846f571}
+
+\item 
+\hypertarget{class_character_a149bb0bf8342c3106754cb59abe45ca8}{
+int {\bfseries getLostPoints} ()}
+\label{class_character_a149bb0bf8342c3106754cb59abe45ca8}
+
+\item 
+void \hyperlink{class_character_a321c65330bd5206e90f1164794dde564}{movement} ()
+\begin{DoxyCompactList}\small\item\em Funktion som kontrollerar n\"{a}r en ny \char`\"{}frame\char`\"{}/sprite skall \"{a}ndras n\"{a}r spelkarakt\"{a}ren r\"{o}r sig \"{o}ver banan. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_character_a6bffa7b53100252992de8121b30808f0}{standStill} ()
+\begin{DoxyCompactList}\small\item\em N\"{a}r spelaren inte r\"{o}r sin karakt\"{a}r. \item\end{DoxyCompactList}\item 
+\hyperlink{class_character_ad124f2aa4492c8eb5ff634061b1f878d}{Character} (void)
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Spelkaraktären. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_character_ad124f2aa4492c8eb5ff634061b1f878d}{
+\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\subsubsection[{Character}]{\setlength{\rightskip}{0pt plus 5cm}Character::Character (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{class_character_ad124f2aa4492c8eb5ff634061b1f878d}
+
+
+Default constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_character_a2f240f8652b6fd299a442b12aac58751}{
+\index{Character@{Character}!draw@{draw}}
+\index{draw@{draw}!Character@{Character}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Character::draw (
+\begin{DoxyParamCaption}
+\item[{BITMAP $\ast$}]{buffer, }
+\item[{BITMAP $\ast$}]{hero}
+\end{DoxyParamCaption}
+)}}
+\label{class_character_a2f240f8652b6fd299a442b12aac58751}
+
+
+Ritar ut spelkarakt\"{a}ren p\aa sk\"{a}rmen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero} & F\"{o}r att kunna rita ut spelkarakt\"{a}ren p\aa sk\"{a}rmen \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_character_a655190d6646f7b99ba7559874874ce1a}{
+\index{Character@{Character}!increaseSpeed@{increaseSpeed}}
+\index{increaseSpeed@{increaseSpeed}!Character@{Character}}
+\subsubsection[{increaseSpeed}]{\setlength{\rightskip}{0pt plus 5cm}void Character::increaseSpeed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_character_a655190d6646f7b99ba7559874874ce1a}
+
+
+\"{O}kar hastigheten p\aa hur fort karakt\"{a}ren r\"{o}r sig. 
+
+\hypertarget{class_character_a77c6faec75c1e6dbde8873077a06d3a5}{
+\index{Character@{Character}!move@{move}}
+\index{move@{move}!Character@{Character}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Character::move (
+\begin{DoxyParamCaption}
+\item[{int}]{way}
+\end{DoxyParamCaption}
+)}}
+\label{class_character_a77c6faec75c1e6dbde8873077a06d3a5}
+
+
+Flyttar spelkarakt\"{a}ren \"{o}ver spelplan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em way} & Vilken riktning karakt\"{a}ren skall f\"{o}rflyttas \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_character_a321c65330bd5206e90f1164794dde564}{
+\index{Character@{Character}!movement@{movement}}
+\index{movement@{movement}!Character@{Character}}
+\subsubsection[{movement}]{\setlength{\rightskip}{0pt plus 5cm}void Character::movement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_character_a321c65330bd5206e90f1164794dde564}
+
+
+Funktion som kontrollerar n\"{a}r en ny \char`\"{}frame\char`\"{}/sprite skall \"{a}ndras n\"{a}r spelkarakt\"{a}ren r\"{o}r sig \"{o}ver banan. 
+
+\hypertarget{class_character_a4ef80f3adc05aaa034087ffcdf350e58}{
+\index{Character@{Character}!resetScore@{resetScore}}
+\index{resetScore@{resetScore}!Character@{Character}}
+\subsubsection[{resetScore}]{\setlength{\rightskip}{0pt plus 5cm}void Character::resetScore (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_character_a4ef80f3adc05aaa034087ffcdf350e58}
+
+
+Nollst\"{a}ller po\"{a}ngen (vid omstart av spel). 
+
+\hypertarget{class_character_aa3df58ef04bf2fb027750491b1628bbd}{
+\index{Character@{Character}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!Character@{Character}}
+\subsubsection[{setSpeed}]{\setlength{\rightskip}{0pt plus 5cm}void Character::setSpeed (
+\begin{DoxyParamCaption}
+\item[{int}]{\_\-speed}
+\end{DoxyParamCaption}
+)}}
+\label{class_character_aa3df58ef04bf2fb027750491b1628bbd}
+
+
+S\"{a}tter en specifik hastighet f\"{o}r karakt\"{a}ren (anv\"{a}nds vid omstart av spel). 
+
+\hypertarget{class_character_a6bffa7b53100252992de8121b30808f0}{
+\index{Character@{Character}!standStill@{standStill}}
+\index{standStill@{standStill}!Character@{Character}}
+\subsubsection[{standStill}]{\setlength{\rightskip}{0pt plus 5cm}void Character::standStill (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_character_a6bffa7b53100252992de8121b30808f0}
+
+
+N\"{a}r spelaren inte r\"{o}r sin karakt\"{a}r. 
+
+\hypertarget{class_character_ad91365a2f616aeab26a0083b32522b28}{
+\index{Character@{Character}!updateScore@{updateScore}}
+\index{updateScore@{updateScore}!Character@{Character}}
+\subsubsection[{updateScore}]{\setlength{\rightskip}{0pt plus 5cm}void Character::updateScore (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_character_ad91365a2f616aeab26a0083b32522b28}
+
+
+Uppdaterar po\"{a}ngen f\"{o}r spelaren. 
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Character.h\item 
+Character.cpp\end{DoxyCompactItemize}

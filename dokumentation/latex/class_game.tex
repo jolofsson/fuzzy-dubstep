@@ -1,0 +1,191 @@
+\hypertarget{class_game}{
+\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+}
+
+
+Klass som hanterar all textutmatning n\"{a}r du \"{a}r i spelet, ger ocks\aa information om vilken niv\aa du \"{a}r p\aa och den h\"{o}gsta po\"{a}ngen.  
+
+
+
+
+{\ttfamily \#include $<$Game.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_a3ae96cfdab80ddfed4e942b23c59cfd9}{Game} (void)
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+GameScreen \hyperlink{class_game_abc148e7ddf6351253087eadbb08f8374}{State} ()
+\begin{DoxyCompactList}\small\item\em Liknande get-\/metod f\"{o}r enum. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_game_ae7fba9323f9c9428edaa2a4949b59724}{State} (GameScreen change)
+\begin{DoxyCompactList}\small\item\em Liknande set-\/metod f\"{o}r enum. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_game_a67d92ed08cdb8b2113847289916a586e}{getHighScore} ()
+\begin{DoxyCompactList}\small\item\em Get-\/metod f\"{o}r variabeln highscore. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_game_a082d03fa753d2b628c9ec48ce267c7ba}{setHighScore} (int points)
+\begin{DoxyCompactList}\small\item\em Update highscore. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_game_a79953fe1b47e1ad2a990b3062974935f}{gameTextOutput} (BITMAP $\ast$buffer, \hyperlink{class_character}{Character} c1, int time)
+\begin{DoxyCompactList}\small\item\em All textutmatning till spelet. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_game_abc883a3774cda57cddd5d0d386573afa}{changeLevel} ()
+\begin{DoxyCompactList}\small\item\em Uppdaterar niv\aan i spelet. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_game_a01f74cc65ea1e5f0ea40bf473ca04208}{resetLevel} ()
+\begin{DoxyCompactList}\small\item\em Återst\"{a}ller niv\aan till 1. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_game_a53141ff044e4aa43f23d7dbed11272f6}{getLevel} ()
+\begin{DoxyCompactList}\small\item\em Get-\/metod f\"{o}r variabeln level. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klass som hanterar all textutmatning n\"{a}r du \"{a}r i spelet, ger ocks\aa information om vilken niv\aa du \"{a}r p\aa och den h\"{o}gsta po\"{a}ngen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_game_a3ae96cfdab80ddfed4e942b23c59cfd9}{
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection[{Game}]{\setlength{\rightskip}{0pt plus 5cm}Game::Game (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{class_game_a3ae96cfdab80ddfed4e942b23c59cfd9}
+
+
+Default constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_abc883a3774cda57cddd5d0d386573afa}{
+\index{Game@{Game}!changeLevel@{changeLevel}}
+\index{changeLevel@{changeLevel}!Game@{Game}}
+\subsubsection[{changeLevel}]{\setlength{\rightskip}{0pt plus 5cm}void Game::changeLevel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_game_abc883a3774cda57cddd5d0d386573afa}
+
+
+Uppdaterar niv\aan i spelet. 
+
+\hypertarget{class_game_a79953fe1b47e1ad2a990b3062974935f}{
+\index{Game@{Game}!gameTextOutput@{gameTextOutput}}
+\index{gameTextOutput@{gameTextOutput}!Game@{Game}}
+\subsubsection[{gameTextOutput}]{\setlength{\rightskip}{0pt plus 5cm}void Game::gameTextOutput (
+\begin{DoxyParamCaption}
+\item[{BITMAP $\ast$}]{buffer, }
+\item[{{\bf Character}}]{c1, }
+\item[{int}]{time}
+\end{DoxyParamCaption}
+)}}
+\label{class_game_a79953fe1b47e1ad2a990b3062974935f}
+
+
+All textutmatning till spelet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Bitmap buffer f\"{o}r implementering av double buffering. \\
+\hline
+{\em c1} & F\"{o}r att f\aa tillg\aang till spelaren po\"{a}ng. \\
+\hline
+{\em time} & F\"{o}r m\"{o}jlighet att skriva ut timern i spelet. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_a67d92ed08cdb8b2113847289916a586e}{
+\index{Game@{Game}!getHighScore@{getHighScore}}
+\index{getHighScore@{getHighScore}!Game@{Game}}
+\subsubsection[{getHighScore}]{\setlength{\rightskip}{0pt plus 5cm}int Game::getHighScore (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_game_a67d92ed08cdb8b2113847289916a586e}
+
+
+Get-\/metod f\"{o}r variabeln highscore. 
+
+\begin{DoxyReturn}{Returns}
+Returnerar h\"{o}gsta poängen 
+\end{DoxyReturn}
+\hypertarget{class_game_a53141ff044e4aa43f23d7dbed11272f6}{
+\index{Game@{Game}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!Game@{Game}}
+\subsubsection[{getLevel}]{\setlength{\rightskip}{0pt plus 5cm}int Game::getLevel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_game_a53141ff044e4aa43f23d7dbed11272f6}
+
+
+Get-\/metod f\"{o}r variabeln level. 
+
+\begin{DoxyReturn}{Returns}
+Returnerar den aktuella niv\aan i spelet 
+\end{DoxyReturn}
+\hypertarget{class_game_a01f74cc65ea1e5f0ea40bf473ca04208}{
+\index{Game@{Game}!resetLevel@{resetLevel}}
+\index{resetLevel@{resetLevel}!Game@{Game}}
+\subsubsection[{resetLevel}]{\setlength{\rightskip}{0pt plus 5cm}void Game::resetLevel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_game_a01f74cc65ea1e5f0ea40bf473ca04208}
+
+
+Återst\"{a}ller niv\aan till 1. 
+
+\hypertarget{class_game_a082d03fa753d2b628c9ec48ce267c7ba}{
+\index{Game@{Game}!setHighScore@{setHighScore}}
+\index{setHighScore@{setHighScore}!Game@{Game}}
+\subsubsection[{setHighScore}]{\setlength{\rightskip}{0pt plus 5cm}void Game::setHighScore (
+\begin{DoxyParamCaption}
+\item[{int}]{points}
+\end{DoxyParamCaption}
+)}}
+\label{class_game_a082d03fa753d2b628c9ec48ce267c7ba}
+
+
+Update highscore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & Gives the variable 'highscore' a new value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_abc148e7ddf6351253087eadbb08f8374}{
+\index{Game@{Game}!State@{State}}
+\index{State@{State}!Game@{Game}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}GameScreen Game::State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_game_abc148e7ddf6351253087eadbb08f8374}
+
+
+Liknande get-\/metod f\"{o}r enum. 
+
+\begin{DoxyReturn}{Returns}
+Vilket l\"{a}ge man befinner sig p\aa i spelet 
+\end{DoxyReturn}
+\hypertarget{class_game_ae7fba9323f9c9428edaa2a4949b59724}{
+\index{Game@{Game}!State@{State}}
+\index{State@{State}!Game@{Game}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}void Game::State (
+\begin{DoxyParamCaption}
+\item[{GameScreen}]{change}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_game_ae7fba9323f9c9428edaa2a4949b59724}
+
+
+Liknande set-\/metod f\"{o}r enum. 
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Game.h\item 
+Game.cpp\end{DoxyCompactItemize}

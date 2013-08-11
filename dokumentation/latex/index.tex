@@ -1,0 +1,39 @@
+\section*{Diamond Hunter}
+
+\par
+ \subsection*{Kapitel 1: Specifikation av Uppgift}
+
+\par
+ {\bfseries Grundideer f\"{o}r spelet} \par
+ Sj\"{a}lva iden med detta spel \"{a}r att styra en spelkarakt\"{a}r till att f\aanga s\aa m\aanga skatter (diamanter) som m\"{o}jligt. N\"{a}r man lyckats f\aanga in alla diamanter innan tiden har l\"{o}pt ut s\aa har man klarat av en niv\aa i spelet. Sv\aarighetsniv\aan i spelet \"{o}kar efter var femte niv\aa. Det inneb\"{a}r att ytterligare en till diamant l\"{a}ggs upp p\aa spelplan bland de redan existerande diamanterna. Vid niv\aa 10 s\aa g\aar \"{a}ven spelkarakt\"{a}ren upp i niv\aa och r\"{o}relsen p\aa karakt\"{a}ren f\"{o}rdubblas. Maximalt kan det finnas sju stycken diamanter samtidigt p\aa spelplanen och tiden man har p\aa sig att f\aanga in samtliga diamanter \"{a}r konstant i hela spelet, d.v.s. 10 sekunder. Lyckas man ej att f\aanga in alla diamanter innan tiden l\"{o}pt ut s\aa har man f\"{o}rlorat. \par
+ \par
+ {\bfseries Gr\"{a}nssnitt} \par
+ Vid start av programmet hamnar man i spelets huvudmeny. I menyn finns tre val som anv\"{a}ndaren kan v\"{a}lja bland och alla val sk\"{o}ts med hj\"{a}lp av tangentbordet. Vid val 1. startas sj\"{a}lva spelet. Val 2. visas \char`\"{}om\char`\"{}-\/spelet, d.v.s. information om hur man spelar och i vilket programmeringsspr\aak det \"{a}r skapat i. Val 3. avslutar spelet. Man styr sin spelkarakt\"{a}r med hj\"{a}lp av tangentbordets piltangenter och n\"{a}r en diamant plockas upp uppdateras spelarens po\"{a}ng, och denna information finner man uppe till v\"{a}nster i f\"{o}nstret. Nedr\"{a}kning av tiden finner man centralt upptill i f\"{o}nstret. N\"{a}r spelaren g\aar upp i niv\aa uppdateras \"{a}ven detta i ett f\"{a}lt h\"{o}gst upp i f\"{o}nstret, d\"{a}r man \"{a}ven finner \char`\"{}high score\char`\"{} som uppdateras n\"{a}r spelaren misslyckas med en niv\aa (game over) och om po\"{a}ngen spelaren har \"{a}r h\"{o}gre \"{a}n det nuvarande \char`\"{}high score\char`\"{}. Om man vill avsluta ett aktivt spel trycker man p\aa Esc-\/ tangenten. \par
+ \par
+ \begin{center} {\bfseries Sk\"{a}rmdumpar}\par
+\par
+ Meny\par
+  \href{meny.jpg}{\tt F\"{o}rstora bilden} \par
+ Spelplan\par
+  \href{spelet.jpg}{\tt F\"{o}rstora bilden} \par
+ Misslyckande\par
+  \href{gameover.jpg}{\tt F\"{o}rstora bilden} \end{center}  \par
+ \par
+ \subsection*{Kapitel 2: Resultat och framtida f\"{o}rb\"{a}ttringar}
+
+\par
+ {\bfseries  Hur mycket hann vi implementera? } \par
+ Ett enkelt fungerande spel som \"{a}r l\"{a}tt att f\"{o}rst\aa. Det som jag hann med att implementera var en spelkarakt\"{a}r med r\"{o}relseanimation. Spelplan. M\aalobjekt i form av diamanter som spelkarakt\"{a}ren skall plocka upp. Timer f\"{o}r nedr\"{a}kning. Grafisk meny. Po\"{a}ngr\"{a}kning och h\"{o}gsta uppn\aadda po\"{a}ng. \par
+ \par
+ {\bfseries Vad skulle kunna f\"{o}rb\"{a}ttras?} \par
+ En mer dynamisk spelplan d\"{a}r olika hinder skulle kunna orsaka att spelaren m\aaste ta andra v\"{a}gar f\"{o}r att n\aa diamanterna, d.v.s. mer utmanande. Även variation p\aa skatter (inte bara diamanter) som ger olika po\"{a}ng till spelaren. F\"{o}rutom det skulle man kunna f\"{o}rb\"{a}ttra misslyckanden i spelet. Att man ist\"{a}llet f\aar po\"{a}ngavdrag n\"{a}r man inte hinner plocka upp alla diamanter ist\"{a}llet f\"{o}r att det blir game over direkt. Och d\"{a}r s\"{a}tta en gr\"{a}ns till fem missade diamanter leder till ett misslyckande (game over). \par
+ \par
+ {\bfseries N\"{a}sta version av programmet vad skulle det inneh\aalla j\"{a}mf\"{o}rt med aktuell version} \par
+ \par
+ N\"{a}sta version hade jag t\"{a}nkt mig att man skall kunna v\"{a}lja om man vill spela med en annan spelare (allts\aa tv\aa spelare samtidigt). D\aa finns det tv\aa spelkarakt\"{a}rer p\aa spelplanen och som styrs med tangentbordet, d\"{a}r spelarna t\"{a}vlar om vem som plockar mest diamanter under en satt tid. F\"{o}rutom det skulle nog en hel del av det som finns under f\"{o}rb\"{a}ttring implementeras ocks\aa. Variation av skatter ger olika po\"{a}ng, en del hinder som st\aar i v\"{a}gen f\"{o}r spelaren. \par
+ \par
+ \par
+ \par
+ \subparagraph*{Jim Olofsson\par
+Dataingenj\"{o}rsprogrammet\par
+\"{o}rebro Universitet}
